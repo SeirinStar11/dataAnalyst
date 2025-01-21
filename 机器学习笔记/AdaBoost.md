@@ -53,9 +53,9 @@ D_{t+1}(i) = D_t(i) \cdot \exp\left(-\alpha_t y_i h_t(x_i)\right)
 #### 2.6. 最终分类器
 最终的强分类器是所有弱分类器的加权投票结果，具体为：
 
-\[
+$$
 H(x) = \text{sign}\left( \sum_{t=1}^{T} \alpha_t h_t(x) \right)
-\]
+$$
 
 其中，\( H(x) \) 是最终的预测结果，\( \alpha_t \) 是弱分类器 \( h_t \) 的权重，\( h_t(x) \) 是弱分类器的预测结果，\( \text{sign}(\cdot) \) 是符号函数，表示最终分类为 \( +1 \) 或者 \( -1 \)。
 
